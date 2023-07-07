@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(2, 59, 184);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(151, 175, 237);
+}
+
+.header-container {
+    position: sticky;
+    top: 0;
+}
+
+.header-container > hr{
+    border: rgb(151, 175, 237);
+}
+
+.header-container > h1 {
+    color: rgb(151, 175, 237);
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header > button {
+    width: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header > button:hover {
+    cursor: pointer;
+}
+
+.header > button > div {
+    height: 15vh;
+    width: 100%;
+    background-image: url("../images/blytzmegaplex.png");
+    background-size: 65%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 1vh 0;
+}
+
+.profile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    margin: 2em;
+}
+
+.profile > div {
+    /* background-image: url("../images/user-solid.svg"); */
+    margin-left: 1em;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 2px solid rgb(151, 175, 237);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.profile > div > div{
+    background-color: rgb(151, 175, 237);
+    -webkit-mask-image: url("../images/user-solid.svg");
+    mask-image: url("../images/user-solid.svg");
+    height: 45px;
+    width: 39.5px;
+    transform: scale(.75);
+}
+
+.profile-login {
+    text-align: center;
+    border: none;
+    padding: 0 1em;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.profile-login:hover {
+    cursor: pointer;
+}
+
+.profile-admin {
+    padding: 0 1em;
+    font-size: 20px;
+    margin: .75em .5em;
+}
+
+.profile-menu:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;  
+    justify-content: center;
+}
+
+.navbar-menu {
+    height: 6vh;
+    line-height: 6vh;
+    margin: 0;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    font-size: 23px;
+    width: 20%;
+    border: none;
+}
+
+.navbar-menu:hover {
+    cursor: pointer;
+}
+
+.navbar-left {
+    border-left: 2px solid rgb(151, 175, 237);
+    border-right: 1px solid rgb(151, 175, 237);
+}
+
+.navbar-middle {
+    border-left: 1px solid rgb(151, 175, 237);
+    border-right: 1px solid rgb(151, 175, 237);
+}
+
+.navbar-right {
+    border-left: 1px solid rgb(151, 175, 237);
+    border-right: 2px solid rgb(151, 175, 237);
+}
+
+.content {
+    background-color: aliceblue;
+    padding: 2% 0;
+}
+
+h2 {
+    background-color: aliceblue;
+    color: rgb(2, 59, 184);
+    text-align: center;
+}
+
+hr {
+    border: 1px solid rgb(2, 59, 184);
+}
+
+.now-showing {
+    background-color: aliceblue;
+    margin: 0 2%;
+}
+
+.now-showing-header {
+    background-color: aliceblue;
+    color: rgb(151, 175, 237);
+    font-weight: 600;
+    font-size: 30px;
+    text-align: center;
+}
+
+.insert-comment {
+    background-color: aliceblue;
+}
+
+.insert-comment > input[type="submit"] {
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 3px;
+    font-size: medium;
+}
+
+.now-showing-content {
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.comment-detail {
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 2%;
+    margin: 1% 2%;
+}
+
+.comment-detail > p {
+    background-color: aliceblue;
+    color: black;
+    font-size: medium;
+}
+
+.comment-detail > input[type="submit"] {
+    background-color: aliceblue;
+    padding: .75rem;
+    border: 1px solid rgb(2, 59, 184);
+    border-radius: 3px;
+    font-size: medium;
+}
+
+.footer {   
+    display: flex;
+    justify-content: center;
+    font-size: 23px;
+    padding: 2vh 0;
+    margin: 0 2.5%;
+    height: 8vh;
+}
+
+.footer > p {
+    width: 80%;
+    line-height: 8vh;
+}
+
+.footer-container {
+    width: 15%;
+    text-align: center;
+}
+
+.footer-container > div {
+    display: flex;
+}
+
+.footer-icon {
+    width: 33.3%;
+    height: 8vh;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-icon-left {
+    background-image: url("../images/instagram.png");
+}
+
+.footer-icon-middle {
+    background-image: url("../images/twitter.png");
+}
+
+.footer-icon-right {
+    background-image: url("../images/facebook.png")
+}
+
+.form-content {
+    background-color: aliceblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-container > form > p, label {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+}
+
+.form-container > form > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-container > form > div > div {
+    width: 50%;
+}
+
+.genderp {
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 550;
+    width: 50%;
+}
+
+.form-container {
+    width: 48%;
+    margin: 3% 0;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.form-content > .form-container > form > input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 5px;
+}
+
+.form-content > .form-container > form > input[type="text"], input[type="email"],  input[type="password"], textarea, input[type="number"] {
+    background-color: white;
+    width: 97%;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 1%;
+}
+
+textarea {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form-content > .form-container > form > div > div > label {
+    margin-right: 2em;
+}
+
+.form-content > .form-container > form > button {
+    padding: .5em 1.5em;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 550;
+    border: 2px solid rgb(151, 175, 237);
+    color: rgb(151, 175, 237);
+}
+
+.form-content > .form-container > form > button:hover {
+    cursor: pointer;
+}
+
+.form-content > .form-container > form > .error-message {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 550;
+}
